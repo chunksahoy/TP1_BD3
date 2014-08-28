@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA065126-90C7-D4DB-F10F-449C9714D078" name="FactureFournisseur">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:54:11 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdFactureFournisseur" id="59AAA684-A74D-F11A-1475-1302C9581DFB">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:56:30 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdFournisseur" id="DB9C6099-3C08-DA11-7E75-43F3B0C4F02C">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:56:30 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>5C24EF74-A645-04BC-E880-A58529631C2B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88AF76BE-F2FC-A479-5EF9-33017A7B7DF8" referredColumn="5C24EF74-A645-04BC-E880-A58529631C2B"/>
+</associations>
+</Column>
+<Column name="DateFactureFournisseur" id="BA1DAAD1-4966-D24D-E867-6276BFB9ABCC">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:56:30 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MontantFactureFournisseur" id="9107B111-5887-CD0D-9583-412F0C9E75BE">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:56:30 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A833952-46FD-4CD9-0137-9BEE476D8197" name="FactureFournisseur_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:56:30 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59AAA684-A74D-F11A-1475-1302C9581DFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80E052D3-5857-4EAD-F886-19F33FA09639" name="FctFnisseur_Fournisseur_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:16:13 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB9C6099-3C08-DA11-7E75-43F3B0C4F02C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

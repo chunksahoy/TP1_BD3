@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="01791E56-D4D5-5F85-7F2C-5ACB02570009" name="CommandeFournisseur" seqName="seg_0"/>
+   <object objectType="Table" objectID="077108FA-CEDF-CC07-2943-AB8A80EB6075" name="Produit" seqName="seg_0"/>
+   <object objectType="Table" objectID="176D752C-1EDA-0CBA-DDC0-248C8B4F96B7" name="CommandeClient" seqName="seg_0"/>
+   <object objectType="Table" objectID="26117027-897D-A7BB-6C15-623F7306071B" name="DetailCommandeClient" seqName="seg_0"/>
+   <object objectType="Table" objectID="35C23962-832F-9B5B-42B9-9CBA5EF55EFF" name="Batisse" seqName="seg_0"/>
+   <object objectType="Table" objectID="393631FB-C324-3557-22FB-9A759ACDB997" name="Client" seqName="seg_0"/>
+   <object objectType="Table" objectID="5083714E-E22C-CFF2-B7C6-7E59467AA02F" name="DetailCommandeFournisseur" seqName="seg_0"/>
+   <object objectType="Table" objectID="6A609853-E33A-99A6-AF9C-BE49EB4DF162" name="FactureClient" seqName="seg_0"/>
+   <object objectType="Table" objectID="7BB5DAD6-1262-3FC3-48C5-34B6021F318C" name="Taxe" seqName="seg_0"/>
+   <object objectType="Table" objectID="7D085764-2F9F-3EBC-A70D-F2CC3BDA82C6" name="Paye" seqName="seg_0"/>
+   <object objectType="Table" objectID="92853FBB-A1E6-99EE-DABC-3BEC178B5470" name="Employe" seqName="seg_0"/>
+   <object objectType="Table" objectID="A7D1FC39-64A0-D5A4-D25E-3ED0A11A2336" name="Inventaire" seqName="seg_0"/>
+   <object objectType="Table" objectID="B466484D-AFA8-EB55-6765-F5029401595E" name="Emploi" seqName="seg_0"/>
+   <object objectType="Table" objectID="C5B2C401-5F91-6D44-4C15-BAAEC142D98B" name="Echelon" seqName="seg_0"/>
+   <object objectType="Table" objectID="DA05E8F8-ACC7-8A8E-0A3C-9BDCA460DE34" name="Fournisseur" seqName="seg_0"/>
+   <object objectType="Table" objectID="E5800AD6-F575-D9F2-082E-9B0B43D69212" name="Departement" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA065126-90C7-D4DB-F10F-449C9714D078" name="FactureFournisseur" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="191FD069-BAC7-A732-7C93-B52AB8CF0766" name="Departement_Batisse_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="410BFADE-8A3C-BACD-0E8C-455219398A99" name="CommandeClient_Employe_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="53B11B15-75FD-6728-8D8D-06D36A7E8CF9" name="CommandeClient_Client_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7FCE9109-8423-CFA8-8762-D260FDCF39B5" name="FactureClient_CmdClient_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="88AF76BE-F2FC-A479-5EF9-33017A7B7DF8" name="FctFnisseur_Fournisseur_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="93A808B1-CF6A-8B58-EBAA-E7D106A99D21" name="CmdFnisseur_Fournisseur_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C7438A0B-37AE-88D8-A409-E5CC3D6A3ED9" name="Employe_Emploi_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F26750C1-2083-E833-FC74-D158A4B266EA" name="FactureClient_Client_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

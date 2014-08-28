@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01791E56-D4D5-5F85-7F2C-5ACB02570009" name="CommandeFournisseur">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:44:11 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdCommandeFournisseur" id="B9E9CF90-4F14-63FB-3848-79CB5D84FC12">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:48:14 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateCommandeFournisseur" id="3A1F0899-A4B3-920A-7C8B-F8F23CAE27A7">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:48:14 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdFournisseur" id="7AE962F6-E16E-89BB-E46D-5E2928C362CE">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:48:14 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>5C24EF74-A645-04BC-E880-A58529631C2B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93A808B1-CF6A-8B58-EBAA-E7D106A99D21" referredColumn="5C24EF74-A645-04BC-E880-A58529631C2B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F085799C-CA1A-0846-E6CA-2B11B3981A24" name="CommandeFournisseur_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:48:27 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9E9CF90-4F14-63FB-3848-79CB5D84FC12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74A68C1C-4282-F646-5FEB-EA7E5A3D28EC" name="CmdFnisseur_Fournisseur_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:15:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AE962F6-E16E-89BB-E46D-5E2928C362CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

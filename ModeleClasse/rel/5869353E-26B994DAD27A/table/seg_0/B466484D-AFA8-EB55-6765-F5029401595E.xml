@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B466484D-AFA8-EB55-6765-F5029401595E" name="Emploi">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdEmploi" id="5DF4642E-2215-5011-7683-470E53ACB325">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:36:28 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DescriptionEmploi" id="1B80B9AD-4BE6-ECEB-FBC0-F3DF3C90C01A">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:36:28 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D22961FC-BFE9-5E7B-9EC9-FBECCFE947D8" name="Emploi_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:36:28 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DF4642E-2215-5011-7683-470E53ACB325"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

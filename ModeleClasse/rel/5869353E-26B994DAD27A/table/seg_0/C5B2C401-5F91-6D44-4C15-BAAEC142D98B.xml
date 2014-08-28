@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5B2C401-5F91-6D44-4C15-BAAEC142D98B" name="Echelon">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:36:41 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdEmploi" id="4E4EAAB8-0472-A631-0EF6-6C58A4715DAB">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:37:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NoEchelon" id="0F110FE7-317D-6680-4853-33E38F503B49">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:37:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TauxHoraire" id="CBC962C8-AA71-7F8B-B05F-6566627DA2CD">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:37:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="236EB3DC-F2A7-E5DC-D67D-8CE8C815207F" name="Echelon_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:37:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E4EAAB8-0472-A631-0EF6-6C58A4715DAB"/>
+<colUsage columnID="0F110FE7-317D-6680-4853-33E38F503B49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

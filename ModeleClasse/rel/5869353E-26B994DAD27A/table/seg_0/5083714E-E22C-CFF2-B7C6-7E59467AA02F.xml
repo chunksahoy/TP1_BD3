@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5083714E-E22C-CFF2-B7C6-7E59467AA02F" name="DetailCommandeFournisseur">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:48:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCommandeCommandeFournisseur" id="F5D0CAA3-C685-6458-5ADA-468953126AF4">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:51:42 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdInventaire" id="C5D6CC2A-2916-B529-160B-6C1F90356E87">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:51:42 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QteCommandeFournisseur" id="3421B9C1-0ABA-3C81-7E6A-6DF8A384460E">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:51:42 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MtnInventCmdFournisseur" id="96E59157-C0FC-4993-547A-068009A42AAC">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:51:42 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBADA29E-8664-BB40-103E-FAF153B2373D" name="DetailCommandeFournisseur_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:51:42 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5D0CAA3-C685-6458-5ADA-468953126AF4"/>
+<colUsage columnID="C5D6CC2A-2916-B529-160B-6C1F90356E87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

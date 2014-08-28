@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A609853-E33A-99A6-AF9C-BE49EB4DF162" name="FactureClient">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:06:26 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdFactureClient" id="72737744-BDD3-18D6-B15C-E3DFE2A814B1">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateFactureClient" id="21DEE015-0C00-4175-9733-F25B690FAD4B">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdClient" id="F9672BB8-9630-082D-BA98-66658FD90A20">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>7F1788E4-6C02-A570-2B7E-F158727FC367</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F26750C1-2083-E833-FC74-D158A4B266EA" referredColumn="7F1788E4-6C02-A570-2B7E-F158727FC367"/>
+</associations>
+</Column>
+<Column name="IdCommandeClient" id="E8F74F5D-43C3-ADE2-243C-4E9BD9DB34C1">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>A0771D65-F782-9A9C-70CA-988E3B10132F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FCE9109-8423-CFA8-8762-D260FDCF39B5" referredColumn="A0771D65-F782-9A9C-70CA-988E3B10132F"/>
+</associations>
+</Column>
+<Column name="MontantFactureClient" id="D5238170-4D9F-F0B3-01CC-EB47F19A07FC">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2ABF9FB-76B4-26D2-7756-D6A0DB62F3C4" name="FactureClient_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:08:03 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72737744-BDD3-18D6-B15C-E3DFE2A814B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="962E2127-C135-E2A6-7B76-39D5BA64FB8F" name="FactureClient_Client_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:19:16 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9672BB8-9630-082D-BA98-66658FD90A20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7173713-C079-537B-89D1-2D41FDC4D44E" name="FactureClient_CmdClient_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:19:16 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8F74F5D-43C3-ADE2-243C-4E9BD9DB34C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

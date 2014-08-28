@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92853FBB-A1E6-99EE-DABC-3BEC178B5470" name="Employe">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:29:13 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdEmploye" id="04E74711-34FE-66F7-41BC-D55F1F488477">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomEmploye" id="FA6CE2B8-DA57-B0B9-ED03-18607F522BD1">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AdEmploye" id="8ABD664B-E5BD-B531-CC86-52041962B023">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VilleEmploye" id="8574DEA7-89F4-2C6D-9965-753BB7DEEF3D">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPEmploye" id="647555DA-F9D7-0BAC-F48F-B332A4685286">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TelEmploye" id="4D2E33B1-165A-B884-5A44-DC6759F0B289">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NoEchelon" id="76145358-A203-3ADD-5DF2-80F8ACC578A3">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdEmploi" id="6EE2E965-49F9-255E-1E05-4F3C2FB69DCB">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>5DF4642E-2215-5011-7683-470E53ACB325</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7438A0B-37AE-88D8-A409-E5CC3D6A3ED9" referredColumn="5DF4642E-2215-5011-7683-470E53ACB325"/>
+</associations>
+</Column>
+<Column name="NoDepartement" id="0AA0CBDB-B5FD-7CC9-F511-0973366E8290">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4C610CB-3CEB-0F4B-E859-15D122CB11D9" name="Employe_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:00 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04E74711-34FE-66F7-41BC-D55F1F488477"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39E337B5-19D6-A4CD-C8B3-75F8477BF87D" name="Employe_Emploi_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:14:19 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EE2E965-49F9-255E-1E05-4F3C2FB69DCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

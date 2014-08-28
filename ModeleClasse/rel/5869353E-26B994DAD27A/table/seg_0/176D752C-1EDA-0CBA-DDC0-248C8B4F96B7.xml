@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="176D752C-1EDA-0CBA-DDC0-248C8B4F96B7" name="CommandeClient">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:01:45 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdCommandeClient" id="A0771D65-F782-9A9C-70CA-988E3B10132F">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:02:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateCommandeClient" id="710F8033-C12D-1D82-0C29-060B436A992C">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:02:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdEmploye" id="2908E3CB-F461-28BB-7BD9-BC3BCB640B18">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:02:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<delegate>04E74711-34FE-66F7-41BC-D55F1F488477</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="410BFADE-8A3C-BACD-0E8C-455219398A99" referredColumn="04E74711-34FE-66F7-41BC-D55F1F488477"/>
+</associations>
+</Column>
+<Column name="IdClient" id="3F45859E-2DD2-47C9-2B40-1E48B88C4B88">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:02:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>7F1788E4-6C02-A570-2B7E-F158727FC367</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53B11B15-75FD-6728-8D8D-06D36A7E8CF9" referredColumn="7F1788E4-6C02-A570-2B7E-F158727FC367"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="425A3612-B228-3315-D6E0-337CEDF655F4" name="CommandeClient_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:02:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0771D65-F782-9A9C-70CA-988E3B10132F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6670029E-FA0B-8DC6-B125-9C81A6BF6918" name="CommandeClient_Employe_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:16:51 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2908E3CB-F461-28BB-7BD9-BC3BCB640B18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="274391E5-0517-DBA3-0643-E0C5294357A7" name="CommandeClient_Client_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:16:51 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F45859E-2DD2-47C9-2B40-1E48B88C4B88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

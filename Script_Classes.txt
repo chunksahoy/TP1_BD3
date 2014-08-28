@@ -1,0 +1,225 @@
+-- Généré par Oracle SQL Developer Data Modeler 4.0.2.840
+--   à :        2014-08-28 10:30:47 EDT
+--   site :      Oracle Database 11g
+--   type :      Oracle Database 11g
+
+
+
+
+CREATE TABLE Batisse
+  (
+    IdBatisse      NUMBER NOT NULL ,
+    AdresseBatisse VARCHAR2 (40) ,
+    VilleBatisse   VARCHAR2 (40) ,
+    TelBatisse     VARCHAR2 (11)
+  ) ;
+ALTER TABLE Batisse ADD CONSTRAINT Batisse_PK PRIMARY KEY ( IdBatisse ) ;
+
+CREATE TABLE Client
+  (
+    IdClient       NUMBER NOT NULL ,
+    NomClient      VARCHAR2 (40) ,
+    AdClient       VARCHAR2 (40) ,
+    VilleClient    VARCHAR2 (40) ,
+    CPClient       VARCHAR2 (6) ,
+    TelClient      VARCHAR2 (11) ,
+    SoldeClient    NUMBER ,
+    CourrielClient VARCHAR2 (40)
+  ) ;
+ALTER TABLE Client ADD CONSTRAINT Client_PK PRIMARY KEY ( IdClient ) ;
+
+CREATE TABLE CommandeClient
+  (
+    IdCommandeClient   NUMBER NOT NULL ,
+    DateCommandeClient DATE ,
+    IdEmploye          NUMBER NOT NULL ,
+    IdClient           NUMBER NOT NULL
+  ) ;
+ALTER TABLE CommandeClient ADD CONSTRAINT CommandeClient_PK PRIMARY KEY ( IdCommandeClient ) ;
+
+CREATE TABLE CommandeFournisseur
+  (
+    IdCommandeFournisseur   NUMBER NOT NULL ,
+    DateCommandeFournisseur DATE ,
+    IdFournisseur           NUMBER NOT NULL
+  ) ;
+ALTER TABLE CommandeFournisseur ADD CONSTRAINT CommandeFournisseur_PK PRIMARY KEY ( IdCommandeFournisseur ) ;
+
+CREATE TABLE Departement
+  (
+    NoDepartement      NUMBER NOT NULL ,
+    NomDepartement     VARCHAR2 (40) ,
+    IdEmployeDirecteur NUMBER ,
+    IdBatisse          NUMBER NOT NULL
+  ) ;
+ALTER TABLE Departement ADD CONSTRAINT Departement_PK PRIMARY KEY ( NoDepartement ) ;
+
+CREATE TABLE DetailCommandeClient
+  (
+    IdCommandeCommandeClient     NUMBER NOT NULL ,
+    IdProduit                    NUMBER NOT NULL ,
+    QteCommandeClient            NUMBER ,
+    MontantProduitCommandeClient NUMBER (2)
+  ) ;
+ALTER TABLE DetailCommandeClient ADD CONSTRAINT DetailCommandeClient_PK PRIMARY KEY ( IdCommandeCommandeClient, IdProduit ) ;
+
+CREATE TABLE DetailCommandeFournisseur
+  (
+    idCommandeCommandeFournisseur NUMBER NOT NULL ,
+    IdInventaire                  NUMBER NOT NULL ,
+    QteCommandeFournisseur        NUMBER ,
+    MtnInventCmdFournisseur       NUMBER (2)
+  ) ;
+ALTER TABLE DetailCommandeFournisseur ADD CONSTRAINT DetailCommandeFournisseur_PK PRIMARY KEY ( idCommandeCommandeFournisseur, IdInventaire ) ;
+
+CREATE TABLE Echelon
+  (
+    IdEmploi    NUMBER NOT NULL ,
+    NoEchelon   NUMBER NOT NULL ,
+    TauxHoraire NUMBER
+  ) ;
+ALTER TABLE Echelon ADD CONSTRAINT Echelon_PK PRIMARY KEY ( IdEmploi, NoEchelon ) ;
+
+CREATE TABLE Emploi
+  (
+    IdEmploi          NUMBER NOT NULL ,
+    DescriptionEmploi VARCHAR2 (40)
+  ) ;
+ALTER TABLE Emploi ADD CONSTRAINT Emploi_PK PRIMARY KEY ( IdEmploi ) ;
+
+CREATE TABLE Employe
+  (
+    IdEmploye     NUMBER NOT NULL ,
+    NomEmploye    VARCHAR2 (40) ,
+    AdEmploye     VARCHAR2 (40) ,
+    VilleEmploye  VARCHAR2 (40) ,
+    CPEmploye     VARCHAR2 (6) ,
+    TelEmploye    VARCHAR2 (11) ,
+    NoEchelon     NUMBER ,
+    IdEmploi      NUMBER NOT NULL ,
+    NoDepartement NUMBER
+  ) ;
+ALTER TABLE Employe ADD CONSTRAINT Employe_PK PRIMARY KEY ( IdEmploye ) ;
+
+CREATE TABLE FactureClient
+  (
+    IdFactureClient      NUMBER NOT NULL ,
+    DateFactureClient    DATE ,
+    IdClient             NUMBER NOT NULL ,
+    IdCommandeClient     NUMBER NOT NULL ,
+    MontantFactureClient NUMBER (2)
+  ) ;
+ALTER TABLE FactureClient ADD CONSTRAINT FactureClient_PK PRIMARY KEY ( IdFactureClient ) ;
+
+CREATE TABLE FactureFournisseur
+  (
+    IdFactureFournisseur      NUMBER NOT NULL ,
+    IdFournisseur             NUMBER NOT NULL ,
+    DateFactureFournisseur    DATE ,
+    MontantFactureFournisseur NUMBER (2)
+  ) ;
+ALTER TABLE FactureFournisseur ADD CONSTRAINT FactureFournisseur_PK PRIMARY KEY ( IdFactureFournisseur ) ;
+
+CREATE TABLE Fournisseur
+  (
+    IdFournisseur       NUMBER NOT NULL ,
+    NomFournisseur      VARCHAR2 (40) ,
+    AdFournisseur       VARCHAR2 (40) ,
+    VilleFournisseur    VARCHAR2 (40) ,
+    CPFournisseur       VARCHAR2 (40) ,
+    TelFournisseur      VARCHAR2 (40) ,
+    SoldeFournisseur    NUMBER ,
+    CourrielFournisseur VARCHAR2 (40)
+  ) ;
+ALTER TABLE Fournisseur ADD CONSTRAINT Fournisseur_PK PRIMARY KEY ( IdFournisseur ) ;
+
+CREATE TABLE Inventaire
+  (
+    IdInventaire  NUMBER NOT NULL ,
+    NomInventaire VARCHAR2 (40) ,
+    IdFournisseur NUMBER ,
+    QteStock      NUMBER ,
+    QteMinimum    NUMBER ,
+    QteMaximum    NUMBER
+  ) ;
+ALTER TABLE Inventaire ADD CONSTRAINT Inventaire_PK PRIMARY KEY ( IdInventaire ) ;
+
+CREATE TABLE Paye
+  (
+    IdPaye    NUMBER NOT NULL ,
+    NoSemaine NUMBER ,
+    IdEmploye NUMBER ,
+    Nbheures  NUMBER
+  ) ;
+ALTER TABLE Paye ADD CONSTRAINT Paye_PK PRIMARY KEY ( IdPaye ) ;
+
+CREATE TABLE Produit
+  (
+    IdProduit       NUMBER NOT NULL ,
+    DescProduit     VARCHAR2 (40) ,
+    PrixProduit     NUMBER (2) ,
+    QteStockProduit NUMBER
+  ) ;
+ALTER TABLE Produit ADD CONSTRAINT Produit_PK PRIMARY KEY ( IdProduit ) ;
+
+CREATE TABLE Taxe
+  (
+    NoTps  NUMBER (2) ,
+    "%Tps" NUMBER (2) ,
+    NoTvq  NUMBER (2) ,
+    "%Tvq" NUMBER (2)
+  ) ;
+
+ALTER TABLE CommandeFournisseur ADD CONSTRAINT CmdFnisseur_Fournisseur_FK FOREIGN KEY ( IdFournisseur ) REFERENCES Fournisseur ( IdFournisseur ) ;
+
+ALTER TABLE CommandeClient ADD CONSTRAINT CommandeClient_Client_FK FOREIGN KEY ( IdClient ) REFERENCES Client ( IdClient ) ;
+
+ALTER TABLE CommandeClient ADD CONSTRAINT CommandeClient_Employe_FK FOREIGN KEY ( IdEmploye ) REFERENCES Employe ( IdEmploye ) ;
+
+ALTER TABLE Departement ADD CONSTRAINT Departement_Batisse_FK FOREIGN KEY ( IdBatisse ) REFERENCES Batisse ( IdBatisse ) ;
+
+ALTER TABLE Employe ADD CONSTRAINT Employe_Emploi_FK FOREIGN KEY ( IdEmploi ) REFERENCES Emploi ( IdEmploi ) ;
+
+ALTER TABLE FactureClient ADD CONSTRAINT FactureClient_Client_FK FOREIGN KEY ( IdClient ) REFERENCES Client ( IdClient ) ;
+
+ALTER TABLE FactureClient ADD CONSTRAINT FactureClient_CmdClient_FK FOREIGN KEY ( IdCommandeClient ) REFERENCES CommandeClient ( IdCommandeClient ) ;
+
+ALTER TABLE FactureFournisseur ADD CONSTRAINT FctFnisseur_Fournisseur_FK FOREIGN KEY ( IdFournisseur ) REFERENCES Fournisseur ( IdFournisseur ) ;
+
+
+-- Rapport récapitulatif d'Oracle SQL Developer Data Modeler : 
+-- 
+-- CREATE TABLE                            17
+-- CREATE INDEX                             0
+-- ALTER TABLE                             24
+-- CREATE VIEW                              0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

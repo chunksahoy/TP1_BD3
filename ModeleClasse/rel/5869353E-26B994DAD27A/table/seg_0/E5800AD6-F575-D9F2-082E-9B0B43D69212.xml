@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5800AD6-F575-D9F2-082E-9B0B43D69212" name="Departement">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:33:19 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NoDepartement" id="AD059B1B-840D-254B-EAD2-5EA4C35648BD">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:31 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomDepartement" id="C273A847-D1C3-7F79-30A9-5BFF2F4C2FA6">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:31 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdEmployeDirecteur" id="9AC7086D-2D16-0299-9BE2-CCB103C0F0FF">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:31 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IdBatisse" id="B47BBE79-94BE-D77E-07F7-DE295CFE8D4A">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:31 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>EAF3342C-8F3D-E57C-3765-53D1FA0443AD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="191FD069-BAC7-A732-7C93-B52AB8CF0766" referredColumn="EAF3342C-8F3D-E57C-3765-53D1FA0443AD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5ED3504-1947-2405-86AB-64C4E1378396" name="Departement_PK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 13:35:31 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD059B1B-840D-254B-EAD2-5EA4C35648BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7914C34-2B95-521A-0404-BA581D250BAE" name="Departement_Batisse_FK">
+<createdBy>200777439</createdBy>
+<createdTime>2014-08-28 14:14:49 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>ModeleClasse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B47BBE79-94BE-D77E-07F7-DE295CFE8D4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
